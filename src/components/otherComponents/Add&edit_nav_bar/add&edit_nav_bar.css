@@ -1,0 +1,33 @@
+.add_edit_nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Ensuring the container takes up full width */
+    padding: 30px;
+}
+
+.bi{
+    padding-left: 100px;
+
+}
+
+.nav_icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* This ensures the divs are centered vertically if needed */
+    width: 50%;
+}
+
+
+.nav_icon > div {
+    display: flex;
+    text-align: center;
+    justify-content: center; /* Optionally, to center content horizontally */
+    align-items: center; /* Optionally, to center content vertically */
+    flex-direction: column;
+}
+
+@media screen and (max-width: 790px) {
+    .bi{
+        padding-left: 0px;
+    }
+}

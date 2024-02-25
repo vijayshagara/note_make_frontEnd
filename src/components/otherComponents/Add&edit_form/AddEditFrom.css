@@ -1,0 +1,19 @@
+.form-control-text {
+    width: 100%;  /* Adjust as needed */
+    height: 250px; /* Adjust as needed */
+    padding: 10px; /* Optional: Adjust padding if needed */
+    box-sizing: border-box; /* Ensure padding is included in the total width */
+    text-align: left;
+    margin-top: 50px;
+    background-color: #212121;
+
+}
+
+.form-control-input{
+    text-align: left;
+    height: 101px;
+    margin-top: 50px;
+    margin-right: 2px;
+    margin-left: 2px;
+    background-color: #212121;
+}
