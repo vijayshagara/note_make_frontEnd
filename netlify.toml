@@ -1,9 +1,8 @@
 [build]
-command = "npm run build"
-commandOrigin = "config"
-environment = "CI"
-publish = "/opt/build/repo/dist"
-publishOrigin = "config"
+  command = "npm run build"
+  publish = "/opt/build/repo/dist"
+  commandOrigin = "config"
+  publishOrigin = "config"
 
 [build.environment]
   CI = "true"
