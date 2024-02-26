@@ -18,7 +18,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import LibraryAddOutlinedIcon from '@mui/icons-material/LibraryAddOutlined';
 import './nav.css'
 import { useNavigate } from 'react-router-dom';
-import StateContext from '../../contexts/StateContext';
+// import StateContext from '../../contexts/StateContext';
 import DispatchContext from '../../contexts/DispatchContext';
 
 const Search = styled('div')(({ theme }) => ({
@@ -65,7 +65,7 @@ export default function Nav(props: { setsearchNotesData: Function }) {
   const navigation = useNavigate()
   const { setsearchNotesData } = props
 
-  const appState= useContext(StateContext);
+ // const appState= useContext(StateContext);
   const appDispatch: any = useContext(DispatchContext);
 
   const handleSearch = (e: any) => {
