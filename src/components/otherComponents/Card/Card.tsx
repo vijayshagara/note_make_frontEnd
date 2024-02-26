@@ -7,22 +7,22 @@ import Typography from '@mui/material/Typography';
 import '../Card/card.css'
 import { Link } from 'react-router-dom';
 
-interface Note {
-  _id: string; // Adjust this based on the actual property name from your API
-  title: string;
-  notes: string;
-  isActive: boolean;
-  color:string
-}
+// interface Note {
+//   _id: string; // Adjust this based on the actual property name from your API
+//   title: string;
+//   notes: string;
+//   isActive: boolean;
+//   color:string
+// }
 
-export default function BasicCard(props: { data: Note[] }) {
+export default function BasicCard(props: { data: any }) {
   const { data } = props
 
   return (
     <>
     <h1 className='text-white text-center mt-1'>Your Notes</h1>
     <div className='card'>
-      {data.map((d) => {
+      {data.map((d:any) => {
         return (
           <Link className='cardLink' key={d._id} to={`/add-notes/${d._id}`}>
             <Card key={d._id} className="single_card" style={{backgroundColor:d.color}}>
