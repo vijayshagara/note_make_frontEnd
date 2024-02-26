@@ -4,3 +4,6 @@ commandOrigin = "config"
 environment = "CI"
 publish = "/opt/build/repo/dist"
 publishOrigin = "config"
+
+[build.environment]
+  CI = "true"
