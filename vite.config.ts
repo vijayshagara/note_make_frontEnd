@@ -9,4 +9,7 @@ export default defineConfig({
       '/api': 'https://note-make-backend.onrender.com',
     },
   },
+  build:{
+    outDir:'dist'
+  }
 })
