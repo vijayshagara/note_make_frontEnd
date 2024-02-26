@@ -18,8 +18,6 @@ const LoginForm = () => {
     const appState= useContext(StateContext);
     const appDispatch: any = useContext(DispatchContext);
     
-    console.log("11111",appState);
-    console.log('2222',appDispatch);
 
     
 
@@ -57,7 +55,7 @@ const LoginForm = () => {
     
     return (
         <div>
-            {appState.user ? (<Navigate to={'/'}/>):(<div>
+            {appState.user ? (<Navigate to={'/home'}/>):(<div>
             <section className="vh-100 dark-theme">
                 <div className="container-fluid h-custom">
                     <div className="row d-flex justify-content-center align-items-center h-100" style={{ display: 'flex', flexDirection: 'column', }}>

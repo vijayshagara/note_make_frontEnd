@@ -114,10 +114,10 @@ function App() {
         <StateContext.Provider value={state}>
           <DispatchContext.Provider value={dispatch}>
             <Routes>
-              <Route path='/' element={<HomePage />} />
+              <Route path='/' element={<Login />} />
               <Route path='/add-notes' element={<AddEdit />} />
               <Route path='/add-notes/:id' element={<AddEdit />} />
-              <Route path='/login' element={<Login />} />
+              <Route path='/home' element={<HomePage />} />
             </Routes>
           </DispatchContext.Provider>
         </StateContext.Provider>

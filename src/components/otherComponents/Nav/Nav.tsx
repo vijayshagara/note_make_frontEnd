@@ -102,13 +102,10 @@ export default function Nav(props: { setsearchNotesData: Function }) {
   };
 
   const handleMenuClose2 = () => {
-    console.log('1111111111111',appState);
-    console.log('222222222',appDispatch);
-
     appDispatch({ type: "logout"})
     setAnchorEl(null);
     handleMobileMenuClose();
-     navigation('/login')
+     navigation('/')
   };
 
   const handleMobileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
