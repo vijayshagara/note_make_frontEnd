@@ -1,3 +1,6 @@
 [build]
 command = "npm run build"
-publish = "dist"
+commandOrigin = "config"
+environment = "CI"
+publish = "/opt/build/repo/dist"
+publishOrigin = "config"
