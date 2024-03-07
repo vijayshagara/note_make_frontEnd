@@ -2,7 +2,7 @@ import axios, { AxiosInstance } from "axios";
 
 let baseApiUrl = '/api';
 
-if (import.meta.env.VITE_Base_URL) {
+if (import.meta.env.VITE_BASE_URL) {    
     baseApiUrl = import.meta.env.VITE_BASE_URL
 }
 
