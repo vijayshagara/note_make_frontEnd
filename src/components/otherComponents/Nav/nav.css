@@ -1,6 +1,6 @@
-.css-hyum1k-MuiToolbar-root {
+/* .css-hyum1k-MuiToolbar-root {
     background-color: #212121 !important;
-}
+} */
 
 
 .MuiInputBase-root{
@@ -8,4 +8,8 @@
     align-items: center !important;
     justify-content: center !important;
     text-align: center !important;
+}
+
+div> .MuiPaper-elevation{
+    background-color: #212121 !important; 
 }

@@ -187,7 +187,8 @@ export default function Nav(props: { setsearchNotesData: Function }) {
   );
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <div className='nav_bar'>
+       <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
           <IconButton
@@ -263,5 +264,7 @@ export default function Nav(props: { setsearchNotesData: Function }) {
       {renderMobileMenu}
       {renderMenu}
     </Box>
+    </div>
+   
   );
 }
