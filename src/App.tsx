@@ -93,7 +93,7 @@ function App() {
         const decodedToken: any = jwtDecode(token);
         const currentTimestamp = Math.floor(Date.now() / 1000);
         if (decodedToken.exp < currentTimestamp) {
-          navigate('/login');
+          navigate('/');
         }
       } catch (error) {
         console.error('Error decoding token:', error);
