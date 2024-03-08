@@ -13,3 +13,7 @@
 div> .MuiPaper-elevation{
     background-color: #212121 !important; 
 }
+
+.MuiList-root{
+    color: aliceblue;
+}

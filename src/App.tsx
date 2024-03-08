@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import HomePage from './components/pageComponents/Home/HomePage';
 import AddEdit from './components/pageComponents/Add/AddEdit';
 import Login from './components/pageComponents/Login/Login';
+import SignUp from './components/pageComponents/Signup/SignUp' 
 import { useEffect, useReducer, 
   // useContext
 } from 'react';
@@ -115,6 +116,7 @@ function App() {
           <DispatchContext.Provider value={dispatch}>
             <Routes>
               <Route path='/' element={<Login />} />
+              <Route path='/signup' element={<SignUp />} />
               <Route path='/add-notes' element={<AddEdit />} />
               <Route path='/add-notes/:id' element={<AddEdit />} />
               <Route path='/home' element={<HomePage />} />

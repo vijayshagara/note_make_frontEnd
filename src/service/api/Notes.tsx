@@ -80,6 +80,16 @@ export const loginUser = async (payload:{}) => {
     }
 }
 
+export const signUser = async (payload:{}) => {    
+    try {
+        const response = await http.post<ApiResponse>('/signup',JSON.stringify(payload));        
+        return response.data;
+    } catch (error) {
+        console.log('Error fetching notes:', error);
+        throw error;
+    }
+}
+
 export const getUserInfo = async () => {    
     try {
         const response = await http.get<ApiResponse>('/info');
