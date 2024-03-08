@@ -82,17 +82,26 @@ const AddEditNav: React.FC<AddEditNavProps> = ({ notePayload, onDataFromChild })
   }
 
   const handleChangeColor = (color:string)=>{
-  if(color === 'red' ){
-    notePayload.color = 'red'
+  if(color === '#ffa186' ){
+    notePayload.color = '#ffa186'
   }
-  if(color === 'blue' ){
-    notePayload.color = 'blue'
+  if(color === '#7bff84' ){
+    notePayload.color = '#7bff84'
   }
-  if(color === 'green' ){
-    notePayload.color = 'green'
+  if(color === '#e2eb90' ){
+    notePayload.color = '#e2eb90'
   }
-  if(color === 'yellow' ){
-    notePayload.color = 'yellow'
+  if(color === '#af5982' ){
+    notePayload.color = '#af5982'
+  } 
+  if(color === '#ffc575' ){
+    notePayload.color = '#ffc575'
+  } 
+  if(color === '#75d9e7' ){
+    notePayload.color = '#75d9e7'
+  } 
+  if(color === '#e775da' ){
+    notePayload.color = '#e775da'
   } 
   }
 
@@ -103,6 +112,7 @@ const AddEditNav: React.FC<AddEditNavProps> = ({ notePayload, onDataFromChild })
           <div>
             <form onSubmit={(e) => handleSubmit(e)}>
               <nav className="navbar navbar-light bg-dark add_edit_nav">
+                <div className="1">
                 <div>
                   <i
                     className="bi bi-arrow-left"
@@ -123,24 +133,6 @@ const AddEditNav: React.FC<AddEditNavProps> = ({ notePayload, onDataFromChild })
                       style={{ fontSize: "60px", color: "white" }}
                       onClick={handleColor}
                     ></i>
-                    {colorHideShow ? (
-                      <div>
-                        <div>
-                        <div onClick={()=>handleChangeColor('red')} style={{ transform: "scale(1)", backgroundColor: "red", display: "inline-block", borderRadius: "50%", padding: "5px" }}>
-                          <input type="radio" id="html"  name="fav_language" value="red" style={{ visibility: "hidden" }} />
-                        </div>
-                        <div onClick={()=>handleChangeColor('blue')} style={{ transform: "scale(1)", backgroundColor: "blue", display: "inline-block", borderRadius: "50%", padding: "5px" }}>
-                          <input type="radio" id="html" name="fav_language" value="blue" style={{ visibility: "hidden" }} />
-                        </div>
-                        <div onClick={()=>handleChangeColor('green')} style={{ transform: "scale(1)", backgroundColor: "green", display: "inline-block", borderRadius: "50%", padding: "5px" }}>
-                          <input type="radio" id="html" name="fav_language" value="green" style={{ visibility: "hidden" }} />
-                        </div>
-                        <div onClick={()=>handleChangeColor('yellow')} style={{ transform: "scale(1)", backgroundColor: "yellow", display: "inline-block", borderRadius: "50%", padding: "5px" }}>
-                          <input type="radio" id="html" name="fav_language" value="yellow" style={{ visibility: "hidden" }} />
-                        </div>
-                        </div>
-                      </div>
-                    ) : (<></>)}
                   </div>
                   <div
                     style={{ flex: 1, cursor: "pointer" }}
@@ -151,6 +143,34 @@ const AddEditNav: React.FC<AddEditNavProps> = ({ notePayload, onDataFromChild })
                       style={{ fontSize: "60px", color: "white" }}
                     ></i>
                   </div>
+                </div>
+                {colorHideShow ? (
+                      <div>
+                        <div>
+                        <div onClick={()=>handleChangeColor('#ffa186')} style={{ transform: "scale(1)", backgroundColor: "#ffa186", display: "inline-block", borderRadius: "100%", padding: "5px" }}>
+                          <input type="radio" id="html"  name="fav_language" value="#ffa186" style={{ visibility: "hidden" }} />
+                        </div>
+                        <div onClick={()=>handleChangeColor('#7bff84')} style={{ transform: "scale(1)", backgroundColor: "#7bff84", display: "inline-block", borderRadius: "50%", padding: "5px" }}>
+                          <input type="radio" id="html" name="fav_language" value="#7bff84" style={{ visibility: "hidden" }} />
+                        </div>
+                        <div onClick={()=>handleChangeColor('#ffc575')} style={{ transform: "scale(1)", backgroundColor: "#ffc575", display: "inline-block", borderRadius: "50%", padding: "5px" }}>
+                          <input type="radio" id="html" name="fav_language" value="#ffc575" style={{ visibility: "hidden" }} />
+                        </div>
+                        <div onClick={()=>handleChangeColor('#e2eb90')} style={{ transform: "scale(1)", backgroundColor: "#e2eb90", display: "inline-block", borderRadius: "50%", padding: "5px" }}>
+                          <input type="radio" id="html" name="fav_language" value="#e2eb90" style={{ visibility: "hidden" }} />
+                        </div>
+                        <div onClick={()=>handleChangeColor('#af5982')} style={{ transform: "scale(1)", backgroundColor: "#af5982", display: "inline-block", borderRadius: "50%", padding: "5px" }}>
+                          <input type="radio" id="html" name="fav_language" value="#af5982" style={{ visibility: "hidden" }} />
+                        </div>
+                        <div onClick={()=>handleChangeColor('#75d9e7')} style={{ transform: "scale(1)", backgroundColor: "#75d9e7", display: "inline-block", borderRadius: "50%", padding: "5px" }}>
+                          <input type="radio" id="html" name="fav_language" value="#75d9e7" style={{ visibility: "hidden" }} />
+                        </div>
+                        <div onClick={()=>handleChangeColor('#e775da')} style={{ transform: "scale(1)", backgroundColor: "#e775da", display: "inline-block", borderRadius: "50%", padding: "5px" }}>
+                          <input type="radio" id="html" name="fav_language" value="#e775da" style={{ visibility: "hidden" }} />
+                        </div>
+                        </div>
+                      </div>
+                    ) : (<></>)}
                 </div>
               </nav>
             </form>
