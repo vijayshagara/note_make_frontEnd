@@ -140,7 +140,7 @@ const AddEditNav: React.FC<AddEditNavProps> = ({
                     >
                       <i
                         className="bi bi-check-square"
-                        style={{ fontSize: "40px", color: "white" }}
+                        style={{ fontSize: "40px", color: "#7bff84",}}
                       ></i>
                     </div>
                   </div>
@@ -305,7 +305,7 @@ const AddEditNav: React.FC<AddEditNavProps> = ({
                   >
                     <i
                       className="bi bi-pencil-square"
-                      style={{ fontSize: "40px", color: "white" }}
+                      style={{ fontSize: "40px", color: "#7bff84" }}
                     ></i>
                   </div>
                 </div>
