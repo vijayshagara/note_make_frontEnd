@@ -6,3 +6,8 @@
 
 [build.environment]
   CI = "true"
+
+[[redirects]]
+from = "/"*
+to = "/index.html"
+status = 200
